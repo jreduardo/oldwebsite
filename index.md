@@ -9,6 +9,7 @@ bigimg:
   - "/img/back-imgs/emacs.png" : "The better editor for all"
   - "/img/back-imgs/grafs.png" : "The beauty histograms with ggplot2"
   - "/img/back-imgs/neural.png" : "Neural network analysis"
+  
 ---
 
 Olá! sou Eduardo Junior, graduando em Estatística pela Universidade
