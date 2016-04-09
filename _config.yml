@@ -20,7 +20,7 @@ navbar-links:
   Blog: "blog"
   Software: "software"
   Ensino: "ensino"
-  Contato: "aboutme"
+  Sobre: "sobre"
   Home: ""
 
 # --- Footer options --- #

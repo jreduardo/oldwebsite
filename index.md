@@ -7,7 +7,7 @@ meta-title: "Eduardo Jr"
 meta-description: "Graduando em Estatística pela UFPR"
 bigimg:
   - "/img/back-imgs/emacs.png" : "The better editor for all"
-  - "/img/back-imgs/graphs.png" : "The beauty histograms with ggplot2"
+  - "/img/back-imgs/grafs.png" : "The beauty histograms with ggplot2"
   - "/img/back-imgs/neural.png" : "Neural network analysis"
 ---
 
