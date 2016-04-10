@@ -28,6 +28,10 @@ _issue_ no
 caso contrário me contate por e-mail
 [edujrrib@gmail.com](mailto:edujrrib@gmail.com).
 
+<div style="text-align:center">
+<b>WEBSITE AINDA EM FASE DE CONSTRUÇÃO</b>
+</div>
+
 <!-- <div style="text-align:center"> -->
 <!-- <strong>Visite os projetos:</strong> &nbsp;&nbsp;  -->
 <!-- <a href="http://derekogle.com/fishR/" role="button" class="btn btn-primary">fishR</a> -->
