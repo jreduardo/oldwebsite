@@ -14,6 +14,29 @@ seu _website_ também, é incrivelmente simples.
 
 As configurações do _website_ são baseadas em:
 
-[https://github.com/droglenc/droglenc.github.io](http://derekogle.com/)
-[https://github.com/ckjoshi9/ckjoshi9.github.io](http://chaitanyajoshi.xyz/)
+1. [https://github.com/daattali/beautiful-jekyll](http://deanattali.com/beautiful-jekyll/)  
+1. [https://github.com/droglenc/droglenc.github.io](http://derekogle.com/)  
 
+Outros sites construídos sob o mesmo template são:
+
+1. [https://github.com/ckjoshi9/ckjoshi9.github.io](http://chaitanyajoshi.xyz/)  
+1. [https://github.com/Melyanna/Melyanna.github.io](http://melyanna.github.io/)  
+1. [https://github.com/thomased/thomased.github.io](http://tomwhite.io/resources)  
+1. [https://github.com/sillasgonzaga/sillasgonzaga.github.io](http://sillasgonzaga.github.io/)  
+1. [https://github.com/brianmaierjr/long-haul](http://brianmaierjr.com/long-haul/)
+
+## TODO ##
+
+**website**
+
+- [ ] Corrigir renderização dos _posts_ no Blog do site;
+- [ ] Modificar estilos css, para deixar o site mais particular
+  (basear-se em http://melyanna.github.io/);
+
+**Matérias do Blog**
+
+- [ ] Escrever sobre a criação de páginas web no GitHub (como funciona o
+  `gh-pages`, páginas principais, facilitar com
+  `daattali/beautiful-jekyll`)
+- [ ] Escrever sobre e elaboração de _posts_ utilizando RMarkdown,
+  truques para compilação se estiver com um site em _Jekyll_
