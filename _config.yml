@@ -17,6 +17,7 @@ avatar: "/img/barba.png"
 
 # List of links in the navigation bar
 navbar-links:
+  Blog: "blog"
   Software: "software"
   Ensino: "ensino"
   Sobre: "sobre"
