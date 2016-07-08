@@ -1,27 +1,41 @@
-# --- Serving options --- #
-# If you are building a simple GitHub user page (username.github.io) then use these settings:
+# --- General options --- #
+
 # url is the full website URL
-url: "http://jreduardo.github.io"
 # baseurl is the website's URL without the hostname
+
+# If you are building a simple GitHub user page (http://username.github.io) then use these settings:
+url: "http://jreduardo.github.io"
 baseurl: ""
+
+# If you are building a GitHub project page then use these settings:
+#url: "http://username.github.io/projectname"
+#baseurl: "/projectname"
+
+# Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
 title: Eduardo Jr's website
+
 # Short description of your site
-description: Graduando em Estatística, adepto a filosofia do Software Livre e amante do R 
+description: Graduando em Estatística, adepto à filosofia do Software Livre e amante do R 
 
 # --- Navigation bar options --- #
-# Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/img/barba.png"
 
 # List of links in the navigation bar
 navbar-links:
   Blog: "blog"
-  Software: "software"
-  Ensino: "ensino"
-  Sobre: "sobre"
-  Home: ""
+  Projetos: 
+    - R packages: "projects-r"
+    - Shiny apps: "projects-shiny" 
+  Portfólio:
+    - Trabalhos da graduação: "graduation"
+    - Monografia: "tcc"
+    - Códigos Shiny: "shiny"
+  Sobre mim: "aboutme"
+
+# Image to show in the navigation bar - image must be a square (width = height)
+# Remove this parameter if you don't want an image in the navbar
+avatar: "/img/barba.png"
 
 # --- Footer options --- #
 
@@ -30,21 +44,25 @@ navbar-links:
 author:
   name: Eduardo E. R. Junior
   email: "edujrrib@gmail.com"
+  facebook: eduardo.junior.1234
   github: jreduardo
-
+  ## twitter: yourname
+  ## linkedin: yourlink
+  stackoverflow: 6563583/eduardo-junior
+ 
 # Select which links to show in the footer
 footer-links-active:
   rss: false
-  facebook: false
+  facebook: true
   email: true
   twitter: false
   github: true
   linkedin: false
-  stackoverflow: false
+  stackoverflow: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-# url-pretty: "jreduardo.com"
+# url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
@@ -52,16 +70,22 @@ footer-links-active:
 #disqus: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: "UA-67615311-1"
+#google_analytics: ""
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
+## Para correta renderizacao dos post's no blog
+paginate_path: "blog/page:num"
+
 # Output options (more information on Jekyll's site)
-timezone: "America/Chicago"
+timezone: "America/Vancouver"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title
+permalink: /:year-:month-:day-:title/
 paginate: 5
+
+kramdown:
+  input: GFM
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
@@ -70,27 +94,71 @@ defaults:
       path: ""
       type: "posts"
     values:
+      layout: "post"
       comments: true  # add comments to all blog posts
   -
     scope:
       path: "" # all files
     values:
-      layout: "default"
+      layout: "page"
+      show-avatar: true
 
 # Exclude these files from production site
 exclude:
-  - CNAME
+  - Gemfile
+  - Gemfile.lock
   - LICENSE
   - README.md
+  - CNAME
+  - Vagrantfile
 
-# prose.io options
+# prose.io config
 prose:
+  rooturl: '_posts'
+  media: 'img'
   ignore:
     - 404.html
     - LICENSE
     - feed.xml
-    - /_includes
+    - _config.yml
     - /_layouts
+    - /_includes
     - /css
     - /img
     - /js
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Post title"
+          placeholder: "Title"
+          alterable: true
+      - name: "subtitle"
+        field:
+          element: "textarea"
+          label: "Subtitle"
+          placeholder: "A description of your post."
+          alterable: true
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          help: "Enter date of post."
+          placeholder: "yyyy-mm-dd"
+          alterable: true
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Publish"
+          help: "Check to publish post, uncheck to hide."
+
+gems:
+  - jekyll-paginate
+
+# Beautiful Jekyll / Dean Attali
+# 2fc73a3a967e97599c9763d05e564189

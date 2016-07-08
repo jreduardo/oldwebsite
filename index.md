@@ -9,8 +9,22 @@ bigimg:
   - "/img/back-imgs/emacs.png" : "The better editor for all"
   - "/img/back-imgs/grafs.png" : "The beauty histograms with ggplot2"
   - "/img/back-imgs/neural.png" : "Neural network analysis"
-  
+
 ---
+
+<style>
+.custom {
+    width: 160px !important;
+}
+</style>
+
+<div style="text-align:center">
+<strong> Links Rápidos: </strong> &nbsp;&nbsp; <br>
+<a href="https://jreduardo.github.io/tcc" role="button" class="btn btn-primary custom">Pacote <TT>cmpreg</TT></a>
+<a href="https://jreduardo.github.io/graduacao" role="button" class="btn btn-primary custom">Trabalhos graduação</a>
+<a href="https://jreduardo.github.io/appsshiny" role="button" class="btn btn-primary custom">Aplicações Shiny</a>
+<a href="https://jreduardo.github.io/cursos" role="button" class="btn btn-primary custom">Cursos e seminários</a>
+</div>
 
 Olá! sou Eduardo Junior, graduando em Estatística pela Universidade
 Federal do Paraná e amante e entusiasta no _software_ R para computação
